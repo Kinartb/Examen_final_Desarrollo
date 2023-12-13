@@ -12,6 +12,10 @@ se tienen estos el repo
 
 https://github.com/Kinartb/TDD
 
+inicialmente
+
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final0.png)
+
 y se creara un archivo example.rb
 
 Se inicia el git con `git init`
@@ -32,14 +36,21 @@ lo que se hara a cotinuacion es tratar de subir los archivos:
 ```
 git push -u origin main
 ```
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final1.png)
+
 Nos aparece un error y que para solucionarlo debemos hacer `git pull`
 
 Configuramos el tipo de solucion que queremos q tenga por defecto ` git config pull.rebase false` (Esto descarga el repositorio al local) y luego hacemos `git pull` nuevamente
 
 Hacemos `git push` y vemos que los archivos se suben con normalidad
 
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/fina2.png)
+
 Este conflicto se debia a que en el repositorio local no se encontraban los archivos `Readme.md` ni `copia_de_readme.md`, ademas de que de manera local se tenia `example.rb` creado por lo que para poder comparar
-los archivos (para este caso unirlos) se debe realizar el pull respectivo y bajar los archivos de manera local para despues subirlo
+los archivos (para este caso unirlos) se debe realizar el pull respectivo y bajar los archivos de manera local para despues subirlo.
+
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final4.png)
+
 
 2.
 ```
@@ -93,9 +104,12 @@ end
 Este método verifica si el campo admin en @user es verdadero. Si no lo es, redirige a la página admin_login con un mensaje de error.
 
 4. no
+
 ### Parte 2. Pruebas
 
-![](fina5)
+Error version de bundler 
+
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/fina5.png)
 
 a partir de ahora se utilizara 
 ```
@@ -107,6 +121,8 @@ rails server
 ```
 Y verificamos la url asignada en el output de pantall
 
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final7.png)
+
 Nos aparece un error donde no se ha creado la tabla ejecutaremos
 
 ```
@@ -114,6 +130,7 @@ rake db:migrate
 ```
 al ejecutar `rails server` nos aparece la pagina cargada satisfactoriamente.
 
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final8.png)
 Para comenzar con el trabajao agregamos dichas gemas al archivo gemfile
 ```
 gem 'faraday'  
@@ -129,7 +146,8 @@ luego ` bundle exec guard init rspec` y posteriormente para utilizar el entorno 
 bundle exec guard
 
 ```
-![](9)
+![](
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final9.png))
 
 Creamos la tabla pero se me olvido crear las peliculas, para esto usamos
 ```
@@ -137,16 +155,17 @@ rake db:seed
 ```
 Ejecutamos y luego haremos `rails server`
 
-![](10)
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final10.png)
 
 Despues de implementar lo pedido vimos que las 3 pruebas realizadas fallan
 
-![](11)
+
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final11.png)
 
 
 Vamos a implementar los errores
 
-![](12)
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final12.png)
 
 Vemos que las 3 pruebas fallan pero ahora el tipo derror es diferentes nos aparece un Thread asi que lo agregamos. Al agregar `(usando guard activamente)` el siguiente codigo
 
@@ -171,13 +190,15 @@ Si bien se implemento en el paso 1, recien aparece este problema en el paso 2.
 
 Al momento de ejecutarlo vemos ahora que solamente esta fallando 2 de las 3 pruebas como vemos en el `guard`
 
-![](13)
+
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final13.png)
 
 
 ¿Puedes ir a /search_tmdb ahora? 
 En este punto, RSpec debería informa Green para el primer ejemplo, pero eso no es realmente exacto porque el ejemplo en sí está incompleto: en realidad no se ha verificado si search_tmdb en el controlador llama a un método modelo para buscar TMDb, como lo requiere la especificación. 
 
-![](14)
+
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final14.png)
 
 modificamos `movies_controller_spec`
 ```
@@ -191,7 +212,8 @@ end
 
 la prueba sigue fallando pero por la razon correcta
 
-![](15)
+
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final15.png)
 
 ¿Por qué la expectativa receive debe preceder  a la acción get en la prueba?.
 
