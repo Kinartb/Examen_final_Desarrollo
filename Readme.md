@@ -146,7 +146,6 @@ luego ` bundle exec guard init rspec` y posteriormente para utilizar el entorno 
 bundle exec guard
 
 ```
-![](
 ![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final9.png))
 
 Creamos la tabla pero se me olvido crear las peliculas, para esto usamos
@@ -166,6 +165,8 @@ Despues de implementar lo pedido vimos que las 3 pruebas realizadas fallan
 Vamos a implementar los errores
 
 ![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final12.png)
+
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final13.png)
 
 Vemos que las 3 pruebas fallan pero ahora el tipo derror es diferentes nos aparece un Thread asi que lo agregamos. Al agregar `(usando guard activamente)` el siguiente codigo
 
@@ -189,9 +190,6 @@ end
 Si bien se implemento en el paso 1, recien aparece este problema en el paso 2.
 
 Al momento de ejecutarlo vemos ahora que solamente esta fallando 2 de las 3 pruebas como vemos en el `guard`
-
-
-![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final13.png)
 
 
 ¿Puedes ir a /search_tmdb ahora? 
