@@ -197,6 +197,7 @@ Al momento de ejecutarlo vemos ahora que solamente esta fallando 2 de las 3 prue
 ¿Puedes ir a /search_tmdb ahora? 
 En este punto, RSpec debería informa Green para el primer ejemplo, pero eso no es realmente exacto porque el ejemplo en sí está incompleto: en realidad no se ha verificado si search_tmdb en el controlador llama a un método modelo para buscar TMDb, como lo requiere la especificación. 
 
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final15.png)
 
 ![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final14.png)
 
@@ -213,7 +214,7 @@ end
 la prueba sigue fallando pero por la razon correcta
 
 
-![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final15.png)
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final16.png)
 
 ¿Por qué la expectativa receive debe preceder  a la acción get en la prueba?.
 
@@ -232,7 +233,8 @@ get :search_tmdb, { search_terms: 'hardware' }
 get :search_tmdb, { search_terms: 'hardware' }
 expect(Movie).to receive(:find_in_tmdb).with('hardware').and_return(fake_results)
 ```
-!()[15]
+
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/final17.png)
 
 ### 3
 
@@ -336,7 +338,8 @@ Usar before(:each) es preferible a before(:all). En la mayoría de los casos por
 
 Ahora todas las pruebas fallan esto e debe a que it aun no se ha implementado
 
-![](17)
+
+![](https://github.com/Kinartb/Examen_final_Desarrollo/blob/main/imagenes/18.png)
 
 ### 4
 
