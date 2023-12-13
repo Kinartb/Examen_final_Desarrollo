@@ -257,8 +257,6 @@ Explicación del código:
 
 Modificamos y ahora la prueba aparece en verde
 
-![](16)
-
 ¿De qué tipo de objeto crees que @fake_results es una variable de instancia? (Dicho de otra manera, ¿cuál crees que es el valor de self dentro de un bloque de código de prueba?)
 
 self es la instancia de la clase que está siendo probada. Por lo tanto, @fake_results es una variable de instancia de la clase MoviesController.
